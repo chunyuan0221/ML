@@ -125,11 +125,21 @@
 			python flow --pbLoad built_graph/tiny-yolo-voc-1c.pb --metaLoad built_graph/tiny-yolo-voc-1c.meta --imgdir sample_img
 
 #### 3. See the result
+1. 圖片辨識：
+	* 放了11張柯南的圖片來預測結果，只跑出4張辨識出柯南，辨識結果:
+辨識成功：
 ![image](https://github.com/chunyuan0221/YOLO-V2/blob/master/sample_img/out/35.jpg)
+![image](https://github.com/chunyuan0221/YOLO-V2/blob/master/sample_img/out/39.jpg)
+辨識失敗：
+![image](https://github.com/chunyuan0221/YOLO-V2/blob/master/sample_img/out/45.jpg)
+![image](https://github.com/chunyuan0221/YOLO-V2/blob/master/sample_img/out/47.jpg)
 
+2. 影片辨識：
+	* 測試一段10分鐘柯南影片，辨識出柯南的成果不適很好，近距離臉部特徵明顯的柯南影像才比較容易辨識出來
+	* 由於畫風緣故，會導致人物間有的臉部特徵很相似導致誤認，像是把灰原辨識為柯南
+	
 ## 4.結論
 * 當初在label的資料使用的不多，導致在分辨上有的時候沒有辨識出是柯南
-* 由於畫風緣故，會導致人物間有的臉部特徵很相似，導致誤認(像是把灰原辨識為柯南)
 * 未來可嘗試加入更多筆資料來訓練，降低avg loss
 * 未來也可實驗特徵一致的事物來訓練，像電路板電容偵測好壞或是家庭、辦公室人員人臉辨識
 * 此辨識方法，相較cosine similarity更精準，但相對的需要更多辨識者的圖像
