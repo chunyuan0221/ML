@@ -12,7 +12,7 @@
 * Opencv  
 		有2種指令可以安裝，選哪一個都可以
    ##### 執行 
-		pip install opencv-python		   (只安裝main model)
+		pip install opencv-python	   (只安裝main model)
 		pip install opencv-contrib-python  (main model and contrib model都安裝)
 
 * Cython
@@ -54,8 +54,8 @@
 1. Label image
 	1. 使用軟體 **[labelImg](https://tzutalin.github.io/labelImg/)** (我是用Windows_v1.5.0)
 	2. 安裝與操作可以參考這部影片[https://www.youtube.com/watch?time_continue=2&v=aiy9d9iS-3s](https://www.youtube.com/watch?time_continue=2&v=aiy9d9iS-3s)
-	3. 要標記的圖片存放在"C:...\darkflow\test\training\images"
-	4. 標記後的xml檔案設定存放在"C:...\darkflow\test\training\annotation" 
+	3. 要標記的圖片存放在"C: ...\darkflow\test\training\images"
+	4. 標記後的xml檔案設定存放在"C: ...\darkflow\test\training\annotation" 
 	5. 在label image時,路徑上建議不要有中文 
 
 
@@ -98,13 +98,13 @@
 	* ##### cmd下指令
 			python flow --model cfg/tiny-yolo-1c-train.cfg --load bin/yolov2-tiny-voc.weights --train --dataset test/training/images --annotation test/training/annotations --gpu 0.6
 		##### 指令說明
-			--model   	 :這邊我是選tiny-yolo-voc.cfg修改後儲存為tiny-yolo-1c-train.cfg進行訓練, 
-			--load    	 :因此載入對應的weights是tiny-yolo-voc.weights
+			--model      :這邊我是選tiny-yolo-voc.cfg修改後儲存為tiny-yolo-1c-train.cfg進行訓練, 
+			--load       :因此載入對應的weights是tiny-yolo-voc.weights
 			注意：要載入正確的才不會報錯
-			--dataset 	 :訓練集圖片資料夾位置
+			--dataset    :訓練集圖片資料夾位置
 			--annotation :訓練集annotation(.xml)資料夾位置
 			--gpu        :可設定0~1, 設定1就是全部記憶體資源都給他拿去跑, 我的顯卡普通因此設定1會出現CUDA Error: out of memory, 
-						  若出現這種狀況就設定低一點的比例給training拿去跑,我這邊設定0.6(提供6成記憶體拿來訓練模型,我用的是GTX 960 4G)
+				      若出現這種狀況就設定低一點的比例給training拿去跑,我這邊設定0.6(提供6成記憶體拿來訓練模型,我用的是GTX 960 4G)
 
 2. 訓練時間約1小時train完1000epoch, avg loss降到1.xxx,再讓他繼續training,
 	* 補充說明：
