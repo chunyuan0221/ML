@@ -35,7 +35,7 @@
 * 安裝darkflow
   - command line進到darkflow資料夾內就可以進行安裝
   ##### cmd執行
-  	pip install -e .
+  		pip install -e .
   - 以此指令安裝可以讓darkflow在globally dev mode. 讓我們可以在command line上直接運行
 * darkflow測試
 	* 先下載Pre-trained weights, 並放到darkflow資料夾下的bin資料夾內，若沒有bin自己創建
