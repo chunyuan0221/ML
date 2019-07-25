@@ -11,13 +11,13 @@
 * Tensorflow (I use Tensorflow-gpu 1.14)
 * Opencv  
 		有2種指令可以安裝，選哪一個都可以
-   ##### 執行 
+   ##### cmd執行 
 		pip install opencv-python		   (只安裝main model)
 		pip install opencv-contrib-python  (main model and contrib model都安裝)
 
 * Cython
 
-  ##### 執行
+  ##### cmd執行
 		pip install Cython
 ####
 * 若出現 "ImportError: No module named xxx"
@@ -27,18 +27,19 @@
 ## 2.darkflow建置&測試
 * 我使用的Yolo V2是darkflow
   - use command line到你要放置的位置下執行，未來就在這個地方進行Yolo了
-  
-  	git clone https://github.com/thtrieu/darkflow
+  ##### cmd執行
+  		git clone https://github.com/thtrieu/darkflow
   - 建議挑選空間大的磁碟放置，未來訓練模型的weights檔會很多
   - 要在command line執行git指令要另外安裝Git並加入環境變數
   - 另外可以直接到網址內，以ZIP方式下載
 * 安裝darkflow
   - command line進到darkflow資料夾內就可以進行安裝
-  - pip install -e .
+  ##### cmd執行
+  	pip install -e .
   - 以此指令安裝可以讓darkflow在globally dev mode. 讓我們可以在command line上直接運行
 * darkflow測試
 	* 先下載Pre-trained weights, 並放到darkflow資料夾下的bin資料夾內，若沒有bin自己創建
-	#####  在cmd下輸入:  
+	#####  cmd下輸入:  
 		python flow --model cfg/yolo.cfg --load bin/yolov2.weights --imgdir sample_img/
 		說明：使用python執行, 執行flow接著輸入flow指令來運行你要做的事
 
