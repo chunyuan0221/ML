@@ -41,8 +41,8 @@
 	* 先下載Pre-trained weights, 並放到darkflow資料夾下的bin資料夾內，若沒有bin自己創建
 	#####  cmd下輸入:  
 		python flow --model cfg/yolo.cfg --load bin/yolov2.weights --imgdir sample_img/
+		
 		說明：使用python執行, 執行flow接著輸入flow指令來運行你要做的事
-
 		--model：取用你要使用的模型
 		-- load：讀取對應模型的weights檔
 		-- imgdir：要辨識圖片的位置
