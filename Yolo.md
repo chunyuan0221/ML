@@ -56,8 +56,8 @@
 1. Label image
 	1. 使用軟體 **[labelImg](https://tzutalin.github.io/labelImg/)** (我是用Windows_v1.5.0)
 	2. 安裝與操作可以參考這部影片[https://www.youtube.com/watch?time_continue=2&v=aiy9d9iS-3s](https://www.youtube.com/watch?time_continue=2&v=aiy9d9iS-3s)
-	3. 要標記的圖片存放在"C:...\darkflow\test\training\images"
-	4. 標記後的xml檔案設定存放在"C:...\darkflow\test\training\annotation" 
+	3. 要標記的圖片存放在"C: ...\darkflow\test\training\images"
+	4. 標記後的xml檔案設定存放在"C: ...\darkflow\test\training\annotation" 
 	5. 在label image時,路徑上建議不要有中文 
 
 
@@ -129,6 +129,6 @@
 ## 4.結論
 * 當初在label的資料使用的不多，導致在分辨上有的時候沒有辨識出是柯南
 * 由於畫風緣故，會導致人物間有的臉部特徵很相似，導致誤認(像是把灰原辨識為柯南)
-* 未來可嘗試加入更多筆資料來訓練，壓低avg loss
+* 未來可嘗試加入更多筆資料來訓練，降低avg loss
 * 未來也可實驗特徵一致的事物來訓練，像電路板電容偵測好壞或是家庭、辦公室人員人臉辨識
 * 此辨識方法，相較cosine similarity更精準，但相對的需要更多辨識者的圖像
