@@ -127,10 +127,10 @@
 #### 3. See the result
 1. 圖片辨識：
 	* 放了11張柯南的圖片來預測結果，只跑出4張辨識出柯南，辨識結果:
-辨識成功：
+* 辨識成功：
 ![image](https://github.com/chunyuan0221/YOLO-V2/blob/master/sample_img/out/35.jpg)
 ![image](https://github.com/chunyuan0221/YOLO-V2/blob/master/sample_img/out/39.jpg)
-辨識失敗：
+* 辨識失敗：
 ![image](https://github.com/chunyuan0221/YOLO-V2/blob/master/sample_img/out/45.jpg)
 ![image](https://github.com/chunyuan0221/YOLO-V2/blob/master/sample_img/out/47.jpg)
 
