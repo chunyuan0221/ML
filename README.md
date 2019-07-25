@@ -16,7 +16,6 @@
 		pip install opencv-contrib-python  (main model and contrib model都安裝)
 
 * Cython
-		.
   ##### 執行
 		pip install Cython
 ####
