@@ -124,6 +124,9 @@
 	* ##### cmd下指令
 			python flow --pbLoad built_graph/tiny-yolo-voc-1c.pb --metaLoad built_graph/tiny-yolo-voc-1c.meta --imgdir sample_img
 
+#### 3. See the result
+![image](https://github.com/chunyuan0221/YOLO-V2/blob/master/sample_img/out/35.jpg)
+
 ## 4.結論
 * 當初在label的資料使用的不多，導致在分辨上有的時候沒有辨識出是柯南
 * 由於畫風緣故，會導致人物間有的臉部特徵很相似，導致誤認(像是把灰原辨識為柯南)
