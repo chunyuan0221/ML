@@ -26,7 +26,9 @@
 
 ## 2.darkflow建置&測試
 * 我使用的Yolo V2是darkflow
-  - use command line到你要放置的位置下執行 "git clone https://github.com/thtrieu/darkflow"，未來就在這個地方進行Yolo了
+  - use command line到你要放置的位置下執行，未來就在這個地方進行Yolo了
+  
+  	git clone https://github.com/thtrieu/darkflow
   - 建議挑選空間大的磁碟放置，未來訓練模型的weights檔會很多
   - 要在command line執行git指令要另外安裝Git並加入環境變數
   - 另外可以直接到網址內，以ZIP方式下載
