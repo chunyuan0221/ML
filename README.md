@@ -12,7 +12,7 @@
 * Opencv  
 		有2種指令可以安裝，選哪一個都可以
    ##### 執行 
-		pip install opencv-python	   (只安裝main model)
+		pip install opencv-python	    (只安裝main model)
 		pip install opencv-contrib-python  (main model and contrib model都安裝)
 
 * Cython
@@ -104,7 +104,7 @@
 			--dataset    :訓練集圖片資料夾位置
 			--annotation :訓練集annotation(.xml)資料夾位置
 			--gpu        :可設定0~1, 設定1就是全部記憶體資源都給他拿去跑, 我的顯卡普通因此設定1會出現CUDA Error: out of memory, 
-				      若出現這種狀況就設定低一點的比例給training拿去跑,我這邊設定0.6(提供6成記憶體拿來訓練模型,我用的是GTX 960 4G)
+				       若出現這種狀況就設定低一點的比例給training拿去跑,我這邊設定0.6(提供6成記憶體拿來訓練模型,我用的是GTX 960 4G)
 
 2. 訓練時間約1小時train完1000epoch, avg loss降到1.xxx,再讓他繼續training,
 	* 補充說明：
@@ -127,6 +127,6 @@
 ## 4.結論
 * 當初在label的資料使用的不多，導致在分辨上有的時候沒有辨識出是柯南
 * 由於畫風緣故，會導致人物間有的臉部特徵很相似，導致誤認(像是把灰原辨識為柯南)
-* 未來可嘗試加入更多筆資料來訓練，壓低avg loss
+* 未來可嘗試加入更多筆資料來訓練，降低avg loss
 * 未來也可實驗特徵一致的事物來訓練，像電路板電容偵測好壞或是家庭、辦公室人員人臉辨識
 * 此辨識方法，相較cosine similarity更精準，但相對的需要更多辨識者的圖像
